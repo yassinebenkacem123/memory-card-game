@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@theme{
+    --background-image-card-1:url('./assets/bg-cards-1.jpg');
+    --background-image-card-2:url('./assets/bg-cards-2.jpg');
+    --background-image-main:url('./assets/bg-image.jpg');
+
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  .animate-gradient-shift {
+    background-size: 200% auto;
+    animation: gradientShift 3s linear infinite;
+  }
+  .form {
+    --main-color: rgb(42, 6, 71); /* Nouvelle couleur principale */
+    --input-focus: #b867d6;
+    --font-color: white;
+    --font-color-sub: #f0e6ff;
+    --bg-color: #ffffff;
+    --accent-color: #fd6bff;
+    
+    padding: 30px;
+    background: linear-gradient(145deg, var(--main-color) 0%, #35124e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    border: 4px solid #f0e6ff;
+    box-shadow: 0 10px 30px rgba(238, 238, 238, 0.2);
+    transform-style: preserve-3d;
+    position: relative;
+    overflow: hidden;
+}
+
+.form::before {
+    content: "🎴";
+    font-size: 80px;
+    opacity: 0.1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.select {
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    border: 3px solid var(--bg-color);
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 4px 4px 0 var(--accent-color);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    padding: 0 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.select:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0 var(--accent-color);
+}
+
+.select:focus {
+    border-color: var(--input-focus);
+    outline: none;
+}
+
+.button-confirm {
+    margin-top: 30px;
+    width: 180px;
+    height: 50px;
+    border-radius: 12px;
+    border: 3px solid var(--bg-color);
+    background-color: var(--accent-color);
+    box-shadow: 4px 4px 0 var(--bg-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.button-confirm:hover {
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0 var(--bg-color);
+    background-color: #b152ff;
+}
+
+.button-confirm:active {
+    transform: translateY(1px);
+    box-shadow: 2px 2px 0 var(--bg-color);
+}
+
+.loader {
+  --cell-size: 80px;
+  --cell-spacing: 1px;
+  --cells: 3;
+  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--total-size);
+  height: var(--total-size);
+}
+
+.cell {
+  flex: 0 0 var(--cell-size);
+  margin: var(--cell-spacing);
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 4px;
+  animation: 1.5s ripple ease infinite;
+}
+
+.cell.d-1 {
+  animation-delay: 100ms;
+}
+
+.cell.d-2 {
+  animation-delay: 200ms;
+}
+
+.cell.d-3 {
+  animation-delay: 300ms;
+}
+
+.cell.d-4 {
+  animation-delay: 400ms;
+}
+
+.cell:nth-child(1) {
+  --cell-color: #641a6d;
+}
+
+.cell:nth-child(2) {
+  --cell-color: #641d72;
+}
+
+.cell:nth-child(3) {
+  --cell-color: rgb(107, 57, 129);
+}
+
+.cell:nth-child(4) {
+  --cell-color: rgb(140, 80, 166);
+}
+
+.cell:nth-child(5) {
+  --cell-color: rgb(175, 111, 202);
+}
+
+.cell:nth-child(6) {
+  --cell-color: rgb(211, 140, 242);
+}
+
+.cell:nth-child(7) {
+  --cell-color: rgb(218, 152, 247);}
+
+.cell:nth-child(8) {
+  --cell-color: rgb(234, 185, 255);
+}
+
+.cell:nth-child(9) {
+  --cell-color: rgb(240, 206, 255);
+}
+
+/*Animation*/
+@keyframes ripple {
+  0% {
+    background-color: transparent;
+  }
+
+  30% {
+    background-color: var(--cell-color);
+  }
+
+  60% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}

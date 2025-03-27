@@ -1,12 +1,31 @@
-# React + Vite
+🎴 Memory Card Game – Built with React.js
+🚀 About the Project
+I’m excited to share that I have successfully developed a Memory Card Game using React.js! This project was a great opportunity to dive deeper into React’s core features, including:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+State Management with useState
 
-Currently, two official plugins are available:
+Side Effects Handling using useEffect
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Context API for global state management
 
-## Expanding the ESLint configuration
+Performance Optimization with useMemo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Router for seamless navigation
+
+🎯 Features
+✅ Interactive card flipping animation
+✅ Score tracking system
+✅ Dynamic card rendering
+✅ Optimized re-renders for better performance
+
+🛠️ Tech Stack
+React.js
+
+CSS for styling
+
+JavaScript (ES6+)
+
+📌 What I Learned
+Building this game helped me solidify my understanding of state-driven UI development and optimizing performance in React applications. It was a fun and challenging experience that pushed me to write cleaner, more efficient code.
+
+📂 Installation & Setup

@@ -28,4 +28,3 @@ JavaScript (ES6+)
 📌 What I Learned
 Building this game helped me solidify my understanding of state-driven UI development and optimizing performance in React applications. It was a fun and challenging experience that pushed me to write cleaner, more efficient code.
 
-📂 Installation & Setup
